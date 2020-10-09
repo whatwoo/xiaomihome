@@ -1,0 +1,189 @@
+.home-hero-container {
+  position: relative;
+  z-index: 10;
+  height: 670px;
+}
+
+.home-hero {
+  position: relative;
+}
+
+.home-hero-swiper {
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  margin: 0 auto;
+}
+
+/* 轮播图 */
+#box img{
+  position:absolute;
+}
+#imgId1{
+  opacity:1;
+}
+#imgId2{
+  opacity:0;
+}
+#imgId3{
+  opacity:0;
+}
+#imgId4{
+  opacity:0;
+}
+#imgId5{
+  opacity:0;
+}
+#box ul{
+  position:absolute;
+  right:30px;
+  bottom:20px;
+  height:21px;
+}
+#box li {
+  float:left;
+  margin:4px;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  border: 2px solid gray;
+  background-color:#333;
+  opacity: .75;
+  cursor: pointer;
+}
+#leftArrow {
+  position: absolute;
+  left:234px;
+  top:50%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #333;
+  transition: all .15s;
+}
+#leftArrow span, #rightArrow span{
+  display: block;
+  height: 69px;
+  width: 41px;
+  line-height: 69px;
+  text-align: center;
+  cursor: pointer;
+}
+#rightArrow {
+  position: absolute;
+  right:0px;
+  top:50%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: #333;
+  transition: all .15s;
+}
+#leftArrow:hover, #rightArrow:hover {
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+}
+
+
+.home-hero-sub {
+  margin-top: 14px;
+  height: 170px;
+}
+
+.row {
+  margin-left: -14px;
+}
+
+.span4 {
+  width: 234px;
+}
+
+.home-channel-list {
+  padding: 3px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #5f5750;
+  height: 170px;
+  box-sizing: border-box;
+}
+
+.home-channel-list li {
+  float: left;
+  position: relative;
+  width: 70px;
+  height: 82px;
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+.home-channel-list li:hover a {
+  opacity: 1;
+}
+
+.home-channel-list li::before {
+  top: -1px;
+  left: 6px;
+  width: 64px;
+  height: 1px;
+}
+.home-channel-list li:after {
+  left: 0;
+  height: 70px;
+  width: 1px;
+  top: 6px;
+}
+.home-channel-list li:after, .home-channel-list li:before {
+  position: absolute;
+  content: "";
+  background-color: #665e57;
+}
+
+.home-channel-list a {
+  display: block;
+  padding-top: 18px;
+  text-overflow: ellipsis;
+  color: #fff;
+  opacity: .7;
+  transition: opacity .1s;
+}
+
+.home-channel-list a img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto 4px;
+}
+
+
+.span16 {
+  width: 978px;
+}
+
+.home-promo-list li.first {
+  margin-left: 0;
+}
+
+.home-promo-list li {
+  float: left;
+  width: 316px;
+  height: 170px;
+  margin-left: 15px;
+  transition: box-shadow .2s linear,-webkit-box-shadow .2s linear;
+}
+
+.home-promo-list li:hover {
+  z-index: 2;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+
+.home-promo-list a {
+  display: block;
+  height: 170px;
+}
+
+.home-promo-list img {
+  display: block;
+  width: 316px;
+  height: 170px;
+}
